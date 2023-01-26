@@ -22,7 +22,7 @@ pipeline {
                 sh "docker build . -t admin:${env.BUILD_NUMBER}"
                 sh "docker login -u $USERNAME -p $PASSWORD"
                 sh "docker tag admin:${env.BUILD_NUMBER} chanduv33/admin-service:${env.BUILD_NUMBER}"
-                sh "docker push chanduv33/admin-server:${env.BUILD_NUMBER}"
+                sh "docker push chanduv33/admin-service:${env.BUILD_NUMBER}"
             }
             }
         }
