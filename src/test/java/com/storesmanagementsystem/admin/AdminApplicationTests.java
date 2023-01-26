@@ -1,4 +1,4 @@
-package com.capgemini.admin;
+package com.storesmanagementsystem.admin;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
